@@ -10,22 +10,18 @@ public void Display(){
 }
 public  float add(float a ,float b){
     c=a+b;
-
-	return c;
+    return c;
 }
 public float sub(float a , float b){
     c=a-b;
-	
     return c;
 }
 public float multi(float a , float b){
     c=a*b;
-	
     return c;
 }
 public float divi(float a,float b){
     c=a/b;
-	
     return c;
 }
 }
