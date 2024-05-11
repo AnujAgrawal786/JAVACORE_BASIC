@@ -1,0 +1,32 @@
+
+
+class MyExcep extends Exception{
+
+	public MyExcep(String message) {
+		super(message);
+	}
+
+	
+}
+
+class q {
+	public static void main(String[] args) {
+		try {
+			int per = Integer.parseInt(args[0]);
+			if (per>100) 
+				throw new MyExcep("percentege is greater than 100");
+			
+			else if (per<0)
+throw new MyExcep("percentege is less than 0");
+			else
+				System.out.println("value"+per);}
+			catch(MyExcep e) {
+				System.out.println("exception found");
+				System.out.println(e);
+			}
+		
+	}
+
+}
+
+	
